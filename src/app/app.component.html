@@ -1,0 +1,15 @@
+<main>
+  <header>
+    <app-cart-header [headerTitle]="headerTitle"></app-cart-header>
+  </header>
+
+  <section class="container">
+    <app-product-list [products]="products" (onRemoveProduct)="removeProduct($event)"></app-product-list>
+  </section>
+
+  <section class="container">
+    <app-promo-code></app-promo-code>
+
+    <app-car-summary></app-car-summary>
+  </section>
+</main>
